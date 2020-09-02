@@ -1,0 +1,32 @@
+<div appTheme>
+	<button (click)="selectTheme('Old')">Old Theme</button>
+	<button (click)="selectTheme('New')">New Theme</button>
+	<div *ngIf="currentTheme$ | async as currentTheme">You're using the {{ currentTheme.name.toLowerCase() }} theme.
+	</div>
+	<div class="content">
+		<p>
+			Extra, extraction, robust, cinnamon, shop, aromatic kopi-luwak decaffeinated caramelization froth beans.
+			Robust crema eu barista cultivar doppio grounds saucer.
+		</p>
+		<p>
+			Galão variety fair trade, to go siphon sit java black breve whipped. Lungo to go, spoon cream espresso
+			dripper instant cup shop.
+		</p>
+		<p>
+			Grinder, viennese doppio, aroma that extra instant lungo doppio. Con panna sweet beans, pumpkin spice latte
+			medium breve acerbic skinny siphon.
+		</p>
+		<p>
+			Chicory redeye latte bar macchiato skinny shop. Coffee cup blue mountain whipped medium skinny organic
+			frappuccino.
+		</p>
+		<p>
+			Café au lait rich bar, medium caffeine robusta chicory iced. Café au lait, strong, aged aroma extraction,
+			grounds shop sweet est caffeine dripper blue mountain.
+		</p>
+		<p>
+			Sweet qui caramelization, qui latte affogato percolator french press crema breve. Wings percolator extra,
+			cinnamon coffee java acerbic a cinnamon.
+		</p>
+	</div>
+</div>

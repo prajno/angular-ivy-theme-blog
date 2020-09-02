@@ -1,0 +1,29 @@
+button {
+  font-size: var(--button-font-size);
+  margin: 10px;
+}
+
+.old-theme {
+  button { background: 1px solid darkgray;}
+}
+
+.new-theme {
+  button 
+  {
+    background: lightgray; 
+    border: none;
+    font-style: var(--font-style); 
+    padding: 5px;
+    &:focus {
+      outline: none;
+      font-weight: bold;
+    }   
+  }
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    p {
+      padding: 10px;
+    }
+  }
+}

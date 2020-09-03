@@ -8,6 +8,7 @@ button {
 }
 
 .new-theme {
+  color: var(--font-color);
   button 
   {
     background: lightgray; 
@@ -20,10 +21,17 @@ button {
     }   
   }
   .content {
+    background: var(--background);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     p {
       padding: 10px;
     }
+  }
+}
+
+::ng-deep {
+  body.new-theme {
+    background: var(--page-background);
   }
 }

@@ -16,8 +16,11 @@ export const newTheme: Theme = {
   name: 'New',
   class: 'new-theme',
   properties: {
+    '--background': 'darkgray',
     '--button-font-size': '16px',
-    '--font-style' : 'italic'
+    '--font-color' : 'white',
+    '--font-style' : 'italic',
+    '--page-background' : 'black'
   },
 };
 
